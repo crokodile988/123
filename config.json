@@ -9,7 +9,7 @@
       "settings": {
         "clients": [
           {
-            "id": "REPLACE_WITH_YOUR_UUID",
+            "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
             "level": 0,
             "email": "user@v2ray"
           }
