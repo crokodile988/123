@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     jq \
     && rm -rf /var/lib/apt/lists/*
 
-# Устанавливаем V2Ray вручную — без systemd
+# Устанавливаем V2Ray вручную — без system
 RUN V2RAY_VERSION=$(curl -s https://api.github.com/repos/v2fly/v2ray-core/releases/latest | jq -r '.tag_name') \
     && echo "Installing V2Ray ${V2RAY_VERSION}" \
     && curl -L "https://github.com/v2fly/v2ray-core/releases/download/${V2RAY_VERSION}/v2ray-linux-64.zip" -o /tmp/v2ray.zip \
